@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  @apply h-full;
+}
+
+#root {
+  @apply flex flex-col;
+}
+
+main {
+  @apply grow;
+}
+
+.navbar ul li.byactive a {
+  color: #384b70; /* Aktiv holatda bo‘lishi kerak bo‘lgan rang */
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+@layer utilities {
+  .bg-base-300 {
+    @apply bg-cyan-700;
+  }
+}
+
+@layer components {
+  .align-elements {
+    @apply mx-auto max-w-6xl px-3 sm:px-4 md:px-5;
+  }
+}
